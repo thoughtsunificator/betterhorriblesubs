@@ -1,0 +1,169 @@
+#branding + a.twelvecol.last {
+    position: relative;
+}
+
+.overlay {
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.optionsPopup {
+    font-size: 11.5px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 400px;
+    z-index: 999;
+    background: #DCDCDC;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px 0px #012;
+    text-align: center;
+}
+
+#today.weekday {
+    font-weight: bold;
+}
+
+.optionsPopup:before {
+    display: block;
+    content: "Options";
+    width: 100%;
+    text-indent: 5px;
+    color: #DCDCDC;
+    text-align: center;
+    background: #838388;
+    margin-bottom: 10px;
+}
+
+.optionsPopup select {
+    margin: 5px;
+    color: #DCDCDC;
+    background: #838388;
+}
+
+.twelvecol.last[href="http://horriblesubs.info/"]:hover > .headerButtons,
+.headerButtons:hover {
+    display: inline-block;
+}
+
+.headerButtons {
+    position: absolute;
+    bottom: 17px;
+    right: 0px;
+    text-align: center;
+    display: none;
+}
+
+.headerButton {
+    background-color: rgba(51, 51, 51, 0.3);
+    color: rgba(255, 255, 255, 0.7)!important;
+    display: inline-block;
+    margin-left: 0.5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.headerButton:hover {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: rgba(255, 255, 255, 0.8)!important;
+}
+
+.iconsSet {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-flex;
+    margin-top: 3px;
+}
+
+.iconsSet p {
+    margin: 0px 0px -1.5px 0px!important;
+    padding-left: 1px;
+    padding-right: 1px;
+    display: inline-block;
+    background: url('data:image/png;base64, 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') no-repeat;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.iconsSet .like {
+    background-position: -5px -5px
+}
+
+.iconsSet .like:hover {
+    background-position: -27px -5px
+}
+
+.iconsSet .dislike {
+    background-position: -27px -27px
+}
+
+.iconsSet .dislike:hover {
+    background-position: -49px -27px
+}
+
+.iconsSet .download {
+    background-position: -49px -5px
+}
+
+.iconsSet .download:hover {
+    background-position: -5px -27px
+}
+
+.iconsSet .mal {
+    background-position: -5px -49px
+}
+
+.iconsSet .mal:hover {
+    background-position: -27px -49px
+}
+
+.series.available {
+    background-color: #B5D7B9!important
+}
+
+.series.unavailable {
+    background-color: #D8DAD8!important
+}
+
+.series.delayed {
+    background-color: #DABDBD!important
+}
+
+.series.unreleased {}
+
+.episode.old {
+    background-color: #C3C6C3!important
+}
+
+.episode.new {
+    background-color: #DCE0DC!important
+}
+
+.today-releases .series {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: gray;
+}
+
+.today-releases .series .release-time {
+    position: absolute;
+    right: 0px;
+    background-color: inherit;
+    padding-left: 5px;
+}

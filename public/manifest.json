@@ -1,0 +1,27 @@
+{
+    "author": "Romain Lebesle",
+    "name": "BetterHorribleSubs",
+    "short_name": "BHBS",
+    "version": "0.1.9",
+    "manifest_version": 2,
+    "description": "Add some features to HorribleSubs.",
+    "icons": {
+        "16": "resources/images/betterhorriblesubs/icon-16.png",
+        "48": "resources/images/betterhorriblesubs/icon-48.png",
+        "128": "resources/images/betterhorriblesubs/icon-128.png"
+    },
+    "content_scripts": [{
+        "run_at": "document_start",
+        "all_frames": false,
+        "matches": [
+            "*://horriblesubs.info/*"
+        ],
+        "js": [
+            "betterhorriblesubs.js"
+        ],
+        "css": [
+            "resources/css/betterhorriblesubs.css"
+        ]
+    }],
+    "web_accessible_resources": ["resources/**/*"]
+}
